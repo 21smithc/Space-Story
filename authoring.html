@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="http://www.lawrence.edu/fast/greggj/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<title>Create your own adventure!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-sm-12">
+				<div id="auth">
+					<div class="well">
+						<p>This application requires a secure sign in. Please log in below.</p>
+							<fieldset>
+								<legend>Secure sign in</legend>
+								<label for="user" class="control-label col-sm-2">User:</label>
+								<div class="col-sm-10"><input type="text" class="form-control" id="user" /></div>
+								<label for="password" class="control-label col-sm-2">Password:</label>
+								<div class="col-sm-10"><input type="password" class="form-control" id="password" /></div>
+								<div class="col-sm-offset-2 col-sm-10"><button id="login" class="btn btn-primary">Log In</button></div>
+							</fieldset>
+					</div>
+				</div>
+				<div id="one">
+					  <h3 class="text-warning">Step One</h3>
+					  <p>Fill in the form below with the details of your adventure and click Post.</p>
+					  <div class="well">
+					  <fieldset>
+						<legend>Set up an adventure</legend>
+						<label for="title" class="control-label col-sm-2">Title:</label>
+						<div class="col-sm-10"><input type="text" class="form-control" id="title" /></div>
+						<label for="intro" class="control-label col-sm-2">Introduction:</label>
+						<div class="col-sm-10"><input type="text" class="form-control" id="intro" /></div>
+						<label for="start" class="control-label col-sm-2">Start:</label>
+						<div class="col-sm-10"><input type="text" class="form-control" id="start" /></div>
+						<div class="col-sm-offset-2 col-sm-10"><button id="post1" class="btn btn-primary">Post</button></div>
+					  </fieldset>
+					  </div>
+				</div>
+				<div id="two">
+					  <h3 class="text-warning">Step Two</h3>
+					  <p>Next, use the form below to construct adventure nodes. In the response field you can
+						   enter a comma separated list of potential choices.</p>
+					  <p>When you are done constructing nodes, click the Post button to upload your nodes to
+						 to the server.</p>
+					  <div class="well">
+					  <fieldset>
+						<legend>Set up a node</legend>
+						<label for="name" class="control-label col-sm-2">Name:</label>
+						<div class="col-sm-10"><input type="text" class="form-control" id="name" /></div>
+						<label for="text1" class="control-label col-sm-2">Text:</label>
+						<div class="col-sm-10"><input type="text" class="form-control" id="text1" /></div>
+						<div class="col-sm-offset-2 col-sm-10"><button id="add" class="btn btn-primary">Add Node</button>
+						  <button id="post2" class="btn btn-primary">Post</button></div>
+					  </fieldset>
+					  </div>
+					  <div id="nodes">
+					  </div>
+				</div>
+				<div id="three">
+					<h3 class="text-warning">Step Three</h3>
+					<p>Now, create choices for each node. Below, add which node the choice belongs to, the choice text and
+						the destination node the choice will lead to.</p>
+					<p>When you are done making choices, click Post to upload your choices to the server.</p>
+					<div class="well">
+					<fieldset>
+					  <legend>Set up choices</legend>
+					  <label for="node" class="control-label col-sm-2">Node:</label>
+					  <div class="col-sm-10"><input type="text" class="form-control" id="node" /></div>
+					  <label for="text2" class="control-label col-sm-2">Text:</label>
+					  <div class="col-sm-10"><input type="text" class="form-control" id="text2" /></div>
+					  <label for="goesto" class="control-label col-sm-2">Goes to:</label>
+					  <div class="col-sm-10"><input type="text" class="form-control" id="goesto" /></div>
+					  <div class="col-sm-offset-2 col-sm-10"><button id="add" class="btn btn-primary">Add Choice</button>
+						<button id="post3" class="btn btn-primary">Post</button></div>
+					</fieldset>
+				</div>	
+				<div id="four">
+					  <h3 class="text-warning">Step Three</h3>
+					  <p>Your adventure has been uploaded.</p>
+					  <p>The URL that users will use to access your adventure is <span id="survey_url"></span>.</p>
+				</div>
+			</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="authoring.js"></script>
+    </div>
+  </body>
+</html>
+
+<!-- fasdfasd --!>
